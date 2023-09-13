@@ -55,7 +55,7 @@ class Cronometro extends Component {
     render() {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-               <View style={{width:270, height:270, borderWidth:3, justifyContent: 'center', alignItems: 'center', borderRadius: 10, borderColor: 'red' }}>
+               <View style={{width:270, height:270, borderWidth:3, justifyContent: 'center', alignItems: 'center', borderRadius: 10, borderColor: 'green' }}>
                 <Image
                     source={require('../assets/imagem.jpg')}
                     style={{ width: 220, height: 200 }}
@@ -68,14 +68,14 @@ class Cronometro extends Component {
                         raised
                         name={this.state.cronometroAtivo ? 'pause' : 'play-arrow'}
                         type='material'
-                        color='red'
+                        color='green'
                         onPress={this.iniciarCronometro}
                     />
                     <Icon
                         raised
                         name='refresh'
                         type='material'
-                        color='red'
+                        color='green'
                         onPress={this.reiniciarCronometro}
                     />
                 </View>
